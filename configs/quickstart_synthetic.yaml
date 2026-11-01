@@ -1,0 +1,13 @@
+# Credentials-free smoke run on a seeded synthetic random walk (no edge expected).
+name: quickstart_synthetic
+interval: 1d
+data: {type: synthetic, n: 2500, seed: 7}
+label_window: 11
+folds: 4
+min_train_fraction: 0.5
+spread_bps: 1.0
+commission_bps: 0.5
+models:
+  - name: cnn
+    params: {epochs: 30}
+  - name: logreg

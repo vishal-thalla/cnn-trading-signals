@@ -1,0 +1,16 @@
+# USDJPY=X 1h bars from Yahoo Finance; walk-forward over the second half of the history.
+name: usdjpy_hourly
+interval: 1h
+data: {type: yfinance, symbol: "USDJPY=X", interval: 1h, start: "2024-11-06", end: "2026-10-31"}
+label_window: 25
+folds: 6
+min_train_fraction: 0.5
+spread_bps: 1.0
+commission_bps: 0.5
+min_confidence: 0.0
+seed: 0
+models:
+  - name: cnn
+    params: {epochs: 60, patience: 8}
+  - name: hgb
+  - name: logreg

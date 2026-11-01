@@ -1,0 +1,16 @@
+# EURUSD=X 1d bars from Yahoo Finance; walk-forward over the second half of the history.
+name: eurusd_daily
+interval: 1d
+data: {type: yfinance, symbol: "EURUSD=X", interval: 1d, start: "2004-01-01", end: "2026-10-31"}
+label_window: 11
+folds: 6
+min_train_fraction: 0.5
+spread_bps: 1.0
+commission_bps: 0.5
+min_confidence: 0.0
+seed: 0
+models:
+  - name: cnn
+    params: {epochs: 60, patience: 8}
+  - name: hgb
+  - name: logreg
