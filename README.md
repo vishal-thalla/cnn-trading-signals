@@ -115,7 +115,7 @@ models:
 
 ## Background and credits
 
-This is a ground-up rebuild of **trading-bot-v2**, a 2023–24 side project by Vishal Thalla and **Sirshen Munsamy**. That project explored Alpaca and OANDA trading bots and, later, a CNN over TA-Lib indicator images for OANDA FX pairs. The rebuild keeps the core idea and the original CNN architecture. It replaces TA-Lib and SQLite with tested, vectorised NumPy/pandas. It also adds purged walk-forward validation, a realistic cost-aware backtester, baselines, a config-driven CLI and CI.
+This is a ground-up rebuild of **trading-bot-v2**, a 2023–24 side project by Vishal Thalla. That project explored Alpaca and OANDA trading bots and, later, a CNN over TA-Lib indicator images for OANDA FX pairs. The rebuild keeps the core idea and the original CNN architecture. It replaces TA-Lib and SQLite with tested, vectorised NumPy/pandas. It also adds purged walk-forward validation, a realistic cost-aware backtester, baselines, a config-driven CLI and CI.
 
 The image-encoding idea comes from O. B. Sezer and A. M. Ozbayoglu, *"Algorithmic financial trading with deep convolutional neural networks: Time series to image conversion approach"*, Applied Soft Computing 70 (2018). Purging follows M. López de Prado, *Advances in Financial Machine Learning* (2018), ch. 7.
 
